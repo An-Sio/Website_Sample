@@ -1,0 +1,1 @@
+A website created as an exercise (deliverable) in an Athens University of Economics and Business Master program I have attended, using html, css and javascript.

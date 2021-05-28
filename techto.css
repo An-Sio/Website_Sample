@@ -1,0 +1,398 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    }
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+    height: 100%;
+    }
+    
+    
+.header {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #cde0ec;
+    color: white;
+    }
+    
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #cde0ec;
+    color: #000066;
+    }
+    
+.header img {
+    width: 280px;
+    height: 200px;
+    }
+    
+.header a {
+    border-radius: 25px;
+    display: block;
+    padding: 20px 30px;
+    color: #000066;
+    text-decoration: none;
+    font-size: xx-large;
+    }
+    
+.header a:hover {
+    background-color: #00738C;
+    color: white;
+    }
+
+.image { 
+    background-image: url("internet.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; 
+    min-height: 400px;        
+    }
+    
+.image h1 {
+    font-family:'Nanum Gothic', Arial, Helvetica, sans-serif;
+    font-size: 6rem;
+    margin: 0;
+    text-align: center;
+    color: white;
+    }
+
+.image p {
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+    font-size: 3rem;
+    text-align: center;
+    color: white; 
+    }
+
+.about {
+    display: flex;
+    justify-content: space-around;
+    background-color: #000066;
+    color: white;
+    }
+
+.aboutde1, .aboutde2, .aboutde3, .aboutde4 {
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+    padding: 5px 5px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.781);
+    border-radius: 5px;
+    }
+
+.imageabout {
+    color: rgb(57, 137, 134);
+    font-size: 25px;
+    padding: 0 10px;
+    }
+
+.main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    }
+    
+.info, .picture {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:white;
+    color: rgb(24, 5, 5);
+    width: 49%;
+    text-align: justify;
+    padding: 0 10px;
+    min-height: 200px;
+    }
+
+.picture{
+    padding-top: 10px;
+    }
+
+.info {
+    border: 1px solid black;
+    background-color: white;
+    margin-left: 0.5%;
+    font-size: 1.6rem;
+    }
+    
+.services {
+    display: table;
+    padding-left: 2%;
+    padding-top: 0%; 
+    padding-bottom: 5%;
+}
+    
+.service_allign {
+    display: table-cell;
+    vertical-align: middle;   
+    }
+
+.service_allign h1,h2 {
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+    font-size: x-large; 
+    }
+
+.service_allign li{
+    font-size: 1.5rem;
+}
+
+.button {
+    display: table-cell; 
+    vertical-align: middle;
+    padding-left: 10%;
+    padding-top: 10%;
+    }
+    
+.btn {
+    border: 2px solid  rgb(4, 4, 243);
+    background:none;
+    color: #fff;
+    padding: 40px 60px;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    cursor: pointer; 
+    margin: 20px;
+    transition: 0.8s;
+    position: relative;
+    overflow: hidden;
+    }
+    
+.btn:hover {
+    color: #000;
+    }
+    
+.btn::before {
+    /*content: "";*/
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 180%;
+    background: #000066;
+    z-index: -1;
+    transition: 0,8s;
+    border-radius: 0 0 50% 50%;
+    }
+    
+.btn:hover::before {
+    height: 0%
+    }
+    
+.footer {
+    display: flex;
+    background-color: #cde0ec;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    margin: 10px 0;
+    }
+    
+.social {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #cde0ec;
+    padding-right: 30px;
+    }
+    
+.fb {
+    color: blue;
+    font-size: 2rem;
+    padding: 0 10px;
+    }
+
+.insta {
+    color: rgba(255, 0, 98, 0.856);
+    font-size: 2rem;
+    padding: 0 10px;
+    }
+
+.twitter {
+    color: rgba(0, 183, 255, 0.856);
+    font-size: 2rem;
+    padding: 0 10px;
+    }
+
+.yt {
+    color: rgba(255, 0, 0, 0.952);
+    font-size: 2rem;
+    padding: 0 10px;
+    }
+
+.news {
+    color: gray;
+    font-size: 2rem;
+    padding: 0 10px;
+    }
+    
+.copyright {
+    color: #000066;
+    padding-left: 20px;
+    }
+
+.res {
+    border: 1px solid #00738C;
+    display: none;
+    position: absolute;
+    padding: 10px 15px;
+    top: 5rem;
+    right: 1rem;
+    }
+
+.res a {
+    color: #000066;
+    font-size: large;
+    }
+    
+.newsform {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: black;
+    font-size: 1.2rem;
+    }
+
+.newsform h1 {
+    display: flex;
+    font-size: 1.8rem;
+    margin-right: 0px;
+    margin-bottom: 10px;
+    color: black;
+    }
+
+.menu-content {
+    display: none;
+    background-color: #cde0ec;
+    }
+        
+.menu-content>a, .we {
+    display: block;
+    text-decoration: none;
+    color: rgb(39, 37, 37);
+    text-align: center;
+    padding: 20px;
+    border: 2px solid black;
+    font-size: 1.8rem;
+    }
+        
+.menu-content>a:hover, .we:hover {
+    background-color: #00738C !important;
+    color: white;
+    }
+        
+.submenu {
+    display: none;
+    }
+        
+.submenu>a {
+    display: block;
+    text-decoration: none;
+    background-color: white;
+    color: #000066;
+    padding: 20px 0;
+    text-align: center;
+    border: 1px solid goldenrod;
+    font-size: 1.5rem;
+    }
+        
+.submenu a:hover {
+    background-color: rgb(245, 244, 244);
+    }
+        
+.we {
+    cursor: pointer;
+    }
+
+@media only screen and (max-width: 920px)
+    {
+    .res {
+    display: block;
+    }
+
+    .menu {
+        display: none;
+        }
+
+    .main {
+        flex-direction: column;
+        }
+        
+    .info, .picture, .service_allign,.btn {
+        width: 100%;
+        margin: 10px;
+        padding: 10px;
+        min-height: 20%;
+        }
+    }
+
+@media only screen and (max-width: 500px) {
+    
+    .header img {
+        display: block;
+        width: 65%;
+        height: 65%;
+    }
+
+    .about {
+        position: relative;
+        height: 110px;
+    }
+    
+    .aboutde1 {
+        left: 0;
+        bottom: 0;
+        position: absolute;
+        padding: 20px 0;
+      }
+      
+      .aboutde2 {
+        right: 0;
+        top: 0;
+        position: absolute;
+      }
+      
+      .aboutde3 {
+        top: 0;
+        left: 0;
+        position: absolute;
+      }
+      
+      .aboutde4 {
+        bottom: 0;
+        right: 0;
+        position: absolute;
+      }
+
+      .social {
+        position: relative;
+    }
+
+      .fb, .insta, .twitter, .yt, .news {
+        padding-right: 2px;
+    }
+    
+    .services {
+        position: relative;
+        height: 300px;
+        }
+
+    .service_allign{
+        padding-bottom: 100px;
+        padding-left: 20px;
+    }
+
+    .button {
+        position: absolute;
+        right: 50%;
+        top: 90%; 
+        padding: 0;
+    }
+}
